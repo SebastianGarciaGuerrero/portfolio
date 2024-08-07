@@ -6,8 +6,8 @@ import { TypeAnimation } from "react-type-animation";
 export const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12">
+        <div className="lg:col-span-7 place-self-center text-center lg:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               ¡Hola! Me llamo {""}
@@ -45,8 +45,8 @@ export const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-o">
-          <div className="rounded-full bg-[#181818] w-[500px] h-[500px] lg:w-[400px] relative">
+        <div className="lg:col-span-5 place-self-center mt-8 lg:mt-0">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] relative">
             <Image
               src="/image/seba3d.png"
               alt="hero-image"
