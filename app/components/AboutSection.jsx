@@ -21,26 +21,26 @@ const TAB_DATA = [
     title: "Educación",
     id: "educacion",
     content: (
-        <ul className="list-disc pl-2">
-            <li>IACC</li>
-            <li>Desafio Latam</li>
-            <li>YouTube</li>
-        </ul>
-        ),
+      <ul className="list-disc pl-2">
+        <li>IACC</li>
+        <li>Desafio Latam</li>
+        <li>YouTube</li>
+      </ul>
+    ),
   },
   {
     title: "Certificados",
     id: "certificados",
     content: (
-        <ul className="list-disc pl-2">
-            <li>FullStack Developer</li>
-            <li>Cisco</li>
-        </ul>
-        ),
-  }
+      <ul className="list-disc pl-2">
+        <li>FullStack Developer</li>
+        <li>Cisco</li>
+      </ul>
+    ),
+  },
 ];
 
-export const AboutSection = () => {
+const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
@@ -81,9 +81,13 @@ export const AboutSection = () => {
               {""}Certificados{""}
             </TabButton>
           </div>
-          <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
+          <div className="mt-8">
+            {TAB_DATA.find((t) => t.id === tab).content}
+          </div>
         </div>
       </div>
     </section>
   );
 };
+
+export default AboutSection;

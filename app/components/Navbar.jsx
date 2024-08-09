@@ -21,7 +21,7 @@ const navLinks = [
   },
 ];
 
-export const Navbar = () => {
+const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
@@ -64,3 +64,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
