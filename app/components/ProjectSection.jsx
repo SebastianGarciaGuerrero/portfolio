@@ -7,12 +7,12 @@ import { animate, motion, useInView } from "framer-motion";
 const projectData = [
   {
     id: 1,
-    title: "Proyecto 1",
+    title: "E-commerce",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
-    image: "/image/projects/1.jpeg",
+      "CRUD de productos, carrito de compras, autenticación de usuarios, Tailwind, PostgreSQL, Express.js, React, Cookies, JWT, Cors y Bycrypt",
+    image: "/image/projects/1.jpg",
     tag: ["ALL", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/proyectofinal",
     previewUrl: "/",
   },
   {
