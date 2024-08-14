@@ -13,7 +13,7 @@ const projectData = [
     image: "/image/projects/1.jpg",
     tag: ["ALL", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/proyectofinal",
-    previewUrl: "/",
+    previewUrl: "https://ecommerce-frontend-sebastiangarciaguerreros-projects.vercel.app/",
   },
   {
     id: 2,
