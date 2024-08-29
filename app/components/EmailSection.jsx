@@ -70,11 +70,10 @@ const EmailSection = () => {
           ¡Pongámonos en contacto!
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sint
-          tenetur deserunt illum sequi magni fugit, eaque excepturi voluptate
-          distinctio sit culpa rerum, amet praesentium, non dolor libero? Vel
-          doloremque voluptatibus tempore esse amet? Nisi quibusdam quidem animi
-          sapiente sunt.
+          Estoy en una búsqueda constante de nuevos desafios y oportunidades en el mundo de la tecnología.
+          Si tienes alguna pregunta, proyecto interesante, o solo quieres saludar, no dudes en contactarme. Siempre 
+          estoy dispuesto a colaborar y aprender cosas nuevas. Aquí al costado hay un formulario para que me escribas 
+          directamente a mi correo electrónico. ¡Estaré encantado de conectar contigo!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link
@@ -108,7 +107,7 @@ const EmailSection = () => {
               value={formData.name}
               onChange={handleChange}
               className="bg-[#18191E] border border-[#33353f] placeholder-[#9CA2A9] text-gray-100 rounded-lg block w-full p-2.5"
-              placeholder="Sasha"
+              placeholder="Sasha Sabrina S."
             />
             {errors.name && (
               <p className="text-sm text-red-500">{errors.name}</p>
@@ -128,7 +127,7 @@ const EmailSection = () => {
               value={formData.email}
               onChange={handleChange}
               className="bg-[#18191E] border border-[#33353f] placeholder-[#9CA2A9] text-gray-100 rounded-lg block w-full p-2.5"
-              placeholder="ejemplo@email.com"
+              placeholder="tucorreo@email.com"
             />
             {errors.email && (
               <p className="text-sm text-red-500">{errors.email}</p>
@@ -147,7 +146,7 @@ const EmailSection = () => {
               value={formData.message}
               onChange={handleChange}
               className="bg-[#18191E] border border-[#33353f] placeholder-[#9CA2A9] text-gray-100 rounded-lg block w-full p-2.5"
-              placeholder="Hablemos sobre..."
+              placeholder="Tu mensaje aquí..."
             ></textarea>
             {errors.message && (
               <p className="text-sm text-red-500">{errors.message}</p>

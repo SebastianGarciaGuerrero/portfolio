@@ -31,7 +31,7 @@ const Navbar = () => {
           href="#hero"
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+         {" { Z Ǝ V A } "}
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

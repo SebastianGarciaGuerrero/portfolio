@@ -11,7 +11,7 @@ const projectData = [
     description:
       "CRUD de productos, carrito de compras, autenticación de usuarios, Tailwind, PostgreSQL, Express.js, React, Cookies, JWT, Cors y Bycrypt",
     image: "/image/projects/1.jpg",
-    tag: ["ALL", "Web"],
+    tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/proyectofinal",
     previewUrl: "https://ecommerce-frontend-sebastiangarciaguerreros-projects.vercel.app/",
   },
@@ -21,7 +21,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
     image: "/image/projects/2.png",
-    tag: ["ALL", "Mobile"],
+    tag: ["Todo", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -31,7 +31,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
     image: "/image/projects/3.jpeg",
-    tag: ["ALL", "Mobile"],
+    tag: ["Todo", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -41,7 +41,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
     image: "/image/projects/4.jpeg",
-    tag: ["ALL", "Web"],
+    tag: ["Todo", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -51,7 +51,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
     image: "/image/projects/5.jpeg",
-    tag: ["ALL", "Mobile"],
+    tag: ["Todo", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -61,7 +61,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
     image: "/image/projects/6.jpeg",
-    tag: ["ALL", "Web"],
+    tag: ["Todo", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -93,8 +93,8 @@ const ProjectSection = () => {
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
-          name="ALL"
-          isSelected={tag === "ALL"}
+          name="Todo"
+          isSelected={tag === "Todo"}
         />
         <ProjectTag
           onClick={handleTagChange}

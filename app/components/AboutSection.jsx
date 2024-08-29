@@ -10,10 +10,11 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>JavaScript</li>
-        <li>Node.js</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>PostgreSQL</li>
+        <li>Node</li>
+        <li>React</li>
+        <li>Next</li>
+        <li>SQL</li>
+        <li>Tailwind</li>
       </ul>
     ),
   },
@@ -22,9 +23,8 @@ const TAB_DATA = [
     id: "educacion",
     content: (
       <ul className="list-disc pl-2">
-        <li>IACC</li>
-        <li>Desafio Latam</li>
-        <li>YouTube</li>
+        <li>Estudiante de Técnico Superior en Informática</li>
+        <li>Desarrollador FullStack en Desafio Latam</li>
       </ul>
     ),
   },
@@ -33,8 +33,8 @@ const TAB_DATA = [
     id: "certificados",
     content: (
       <ul className="list-disc pl-2">
-        <li>FullStack Developer</li>
-        <li>Cisco</li>
+        <li>FullStack Developer en Desafio Latam</li>
+        <li>IT Essentials de Cisco</li>
       </ul>
     ),
   },
@@ -55,11 +55,13 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/image/cycle.jpg" alt="cycle" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Sobre Mi</h2>
           <p className="text-base md:text-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
-            repudiandae, id modi quisquam earum odit atque incidunt fugiat
-            aliquam itaque?
+          Mi camino en la programación comenzó de manera autodidacta, explorando videos en YouTube sobre JavaScript. 
+          Esta curiosidad inicial me llevó a dar un paso más y ahora estudio Informática en la universidad. 
+          Mi pasión por los deportes me ha enseñado el valor del compañerismo y la importancia del trabajo en 
+          equipo, habilidades que aplico en mi vida profesional. Además, ser hermano mayor y padre de dos gatas me ha inculcado un 
+          fuerte sentido de la responsabilidad, algo que ha sido fundamental en mi desarrollo personal y profesional.
           </p>
           <div className=" flex flex-row mt-8">
             <TabButton
