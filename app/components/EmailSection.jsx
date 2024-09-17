@@ -71,9 +71,13 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           Estoy en una búsqueda constante de nuevos desafios y oportunidades en el mundo de la tecnología.
-          Si tienes alguna pregunta, proyecto interesante, o solo quieres saludar, no dudes en contactarme. Siempre 
+          Si tienes alguna pregunta, proyecto interesante, o solo quieres saludar, no dudes en contactarme. 
+          <br />
+          Siempre 
           estoy dispuesto a colaborar y aprender cosas nuevas. Aquí al costado hay un formulario para que me escribas 
-          directamente a mi correo electrónico. ¡Estaré encantado de conectar contigo!
+          directamente a mi correo electrónico. 
+          <br />
+          ¡Estaré encantado de conectar contigo!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link

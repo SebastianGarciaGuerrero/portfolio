@@ -9,30 +9,30 @@ const projectData = [
     id: 1,
     title: "E-commerce",
     description:
-      "CRUD de productos, carrito de compras, autenticación de usuarios, Tailwind, PostgreSQL, Express.js, React, Cookies, JWT, Cors y Bycrypt",
+      "Proyecto final de Desafio Latam. PERN stack, con autenticación de usuario, carrito de compras, bycrypt, JWT, JScookie TailwindCSS y Gravatar.",
     image: "/image/projects/1.jpg",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/proyectofinal",
-    previewUrl: "https://ecommerce-frontend-sebastiangarciaguerreros-projects.vercel.app/",
+    previewUrl: "https://zillas.up.railway.app/",
   },
   {
     id: 2,
-    title: "Proyecto 2",
+    title: "DiviCuenta",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
+      "Proyecto propio. Aplicación para dividir cuentas entre roomies, parejas o familias para un pago equitativo según sus ingresos. En proceso aún. Se está utilizando TailwindCSS, Nodejs, React.",
     image: "/image/projects/2.png",
     tag: ["Todo", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/DiviCuenta",
+    previewUrl: "https://divi-cuenta.vercel.app/",
   },
   {
     id: 3,
-    title: "Proyecto 3",
+    title: "Gestión de Inventario",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
-    image: "/image/projects/3.jpeg",
-    tag: ["Todo", "Mobile"],
-    gitUrl: "/",
+      "Proyecto inspirado de EdRoh en Youtube. Punta pie inicial para aprender sobre TypeScript y AWS (ECS2, RDS Y S3). En proceso aún.",
+    image: "/image/projects/3.png",
+    tag: ["Todo", "Web"],
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
     previewUrl: "/",
   },
   {
@@ -110,7 +110,7 @@ const ProjectSection = () => {
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
-          key={index}
+            key={index}
             variants={cardVariance}
             initial="initial"
             animate={isInView ? "animate" : "initial"}

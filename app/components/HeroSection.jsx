@@ -41,11 +41,12 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Desarrollador web FullStack en constante formación siempre buscando
-            nuevos desafios y nuevas tecnologías. Actualmente aprendiendo de
-            JavaScript por mi cuenta mientras estudio Python por la Universidad.
-            Me está interesando mucho AWS y el mundo de la nube, asi que se
-            vienen cositas.
+            Desarrollador web Full Stack en constante aprendizaje, siempre en
+            busca de nuevos desafíos y tecnologías innovadoras. Actualmente, me
+            especializo de forma autodidacta en el stack PERN, mientras practico
+            en mis estudios universitarios Python y PHP. Además, dedico tiempo a
+            explorar AWS en mis ratos libres para ampliar mis conocimientos en
+            la nube.
           </p>
           <div>
             <button
@@ -56,13 +57,19 @@ const HeroSection = () => {
                   .scrollIntoView({ behavior: "smooth" });
               }}
             >
-              ¡Contactémonos!
+              ¡Escríbeme!
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-600 hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Mira mi CV
-              </span>
-            </button>
+            <a
+              href="https://drive.google.com/file/d/1sucEjO-BmTEFDHjsQZVvO7LV2irAgE3s/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-600 hover:bg-slate-800 text-white mt-3">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                  Mira mi CV
+                </span>
+              </button>
+            </a>
           </div>
         </motion.div>
         <div className="lg:col-span-5 place-self-center mt-8 lg:mt-0">

@@ -2,19 +2,20 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import { FiExternalLink } from "react-icons/fi";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 list-disc pl-2">
         <li>JavaScript</li>
-        <li>Node</li>
+        <li>Nodejs</li>
         <li>React</li>
-        <li>Next</li>
-        <li>SQL</li>
-        <li>Tailwind</li>
+        <li>Nextjs</li>
+        <li>PostgreSQL</li>
+        <li>TailwindCSS</li>
       </ul>
     ),
   },
@@ -23,8 +24,8 @@ const TAB_DATA = [
     id: "educacion",
     content: (
       <ul className="list-disc pl-2">
-        <li>Estudiante de Técnico Superior en Informática</li>
-        <li>Desarrollador FullStack en Desafio Latam</li>
+        <li>Estudiante de Técnico Superior en Informática </li>
+        <li>Desarrollador FullStack en Desafio Latam </li>
       </ul>
     ),
   },
@@ -32,9 +33,29 @@ const TAB_DATA = [
     title: "Certificados",
     id: "certificados",
     content: (
-      <ul className="list-disc pl-2">
-        <li>FullStack Developer en Desafio Latam</li>
-        <li>IT Essentials de Cisco</li>
+      <ul className="list-disc pl-4">
+        <li className="flex items-center">
+          <span className="mr-1">• IT Essentials de Cisco</span>
+          <a
+            href="https://drive.google.com/file/d/1l4pxuUsQ4o4cdalmFP5FLLCBiWjEk204/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center"
+          >
+            <FiExternalLink />
+          </a>
+        </li>
+        <li className="flex items-center">
+          <span className="mr-1">• Desarrollador FullStack en Desafio Latam</span>
+          <a
+            href="https://drive.google.com/file/d/1o9pRlxmcgXKdZBQHLn56sV4s6RzJT0tz/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center"
+          >
+            <FiExternalLink />
+          </a>
+        </li>
       </ul>
     ),
   },
@@ -57,11 +78,14 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mi</h2>
           <p className="text-base md:text-lg">
-          Mi camino en la programación comenzó de manera autodidacta, explorando videos en YouTube sobre JavaScript. 
-          Esta curiosidad inicial me llevó a dar un paso más y ahora estudio Informática en la universidad. 
-          Mi pasión por los deportes me ha enseñado el valor del compañerismo y la importancia del trabajo en 
-          equipo, habilidades que aplico en mi vida profesional. Además, ser hermano mayor y padre de dos gatas me ha inculcado un 
-          fuerte sentido de la responsabilidad, algo que ha sido fundamental en mi desarrollo personal y profesional.
+            Mi trayectoria en la programación comenzó de manera autodidacta,
+            explorando videos de JavaScript en YouTube. Esta curiosidad inicial
+            me impulsó a formalizar mis estudios en Informática en la
+            universidad. Mi pasión por los deportes me ha enseñado el valor del
+            trabajo en equipo y el compañerismo, habilidades que aplico en mi
+            vida profesional. Además, ser hermano mayor y padre de dos gatas me
+            ha inculcado un fuerte sentido de responsabilidad, lo que ha sido
+            clave en mi crecimiento personal y profesional.
           </p>
           <div className=" flex flex-row mt-8">
             <TabButton
