@@ -29,13 +29,13 @@ const projectData = [
     id: 3,
     title: "Gestión de Inventario",
     description:
-      "Proyecto inspirado de EdRoh en Youtube. Punta pie inicial para aprender sobre TypeScript y AWS (ECS2, RDS Y S3). En proceso aún.",
+      "Proyecto inspirado de EdRoh en Youtube. Puntapié inicial para aprender sobre TypeScript y AWS (ECS2, RDS Y S3). En proceso aún.",
     image: "/image/projects/3.png",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
     previewUrl: "/",
   },
-  {
+/*   {
     id: 4,
     title: "Proyecto 4",
     description:
@@ -64,7 +64,7 @@ const projectData = [
     tag: ["Todo", "Web"],
     gitUrl: "/",
     previewUrl: "/",
-  },
+  }, */
 ];
 
 const ProjectSection = () => {

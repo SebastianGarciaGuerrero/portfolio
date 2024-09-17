@@ -74,7 +74,7 @@ const EmailSection = () => {
           Si tienes alguna pregunta, proyecto interesante, o solo quieres saludar, no dudes en contactarme. 
           <br />
           Siempre 
-          estoy dispuesto a colaborar y aprender cosas nuevas. Aquí al costado hay un formulario para que me escribas 
+          estoy dispuesto a colaborar y aprender cosas nuevas. Aquí hay un formulario para que me escribas 
           directamente a mi correo electrónico. 
           <br />
           ¡Estaré encantado de conectar contigo!
@@ -84,7 +84,7 @@ const EmailSection = () => {
             href="https://github.com/SebastianGarciaGuerrero"
             target="_blank"
           >
-            <FaGithub className="h-10 w-10 mr-2" />
+            <FaGithub className="h-10 w-10 mr-2 text-white" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/sebastiangarciaguerrero/"
