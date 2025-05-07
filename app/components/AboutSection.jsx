@@ -24,8 +24,19 @@ const TAB_DATA = [
     id: "educacion",
     content: (
       <ul className="list-disc pl-2">
-        <li>Estudiante de Técnico Superior en Informática </li>
+        <li>Técnico Superior en Informática - IACC </li>
+        <p className="text-gray-400 text-sm">
+          Especializado en el desarrollo de software y soluciones tecnológicas,
+          con enfoque en aplicaciones web y sistemas de gestión de bases de
+          datos.
+        </p>
+        <br/>
         <li>Desarrollador FullStack en Desafio Latam </li>
+        <p className="text-gray-400 text-sm">
+          Certificado en el diseño y desarrollo de aplicaciones web completas,
+          dominando tecnologías como Node.js, React, y bases de datos en
+          PostgreSQL.
+        </p>
       </ul>
     ),
   },
@@ -46,7 +57,9 @@ const TAB_DATA = [
           </a>
         </li>
         <li className="flex items-center">
-          <span className="mr-1">• Desarrollador FullStack en Desafio Latam</span>
+          <span className="mr-1">
+            • Desarrollador FullStack en Desafio Latam
+          </span>
           <a
             href="https://drive.google.com/file/d/1o9pRlxmcgXKdZBQHLn56sV4s6RzJT0tz/view?usp=sharing"
             target="_blank"
