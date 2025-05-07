@@ -13,7 +13,7 @@ const projectData = [
     image: "/image/projects/1.jpg",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/proyectofinal",
-    previewUrl: "https://zillas.up.railway.app/",
+    previewUrl: "https://vercel.com/sebastiangarciaguerreros-projects/ecommerce-frontend",
   },
   {
     id: 2,
@@ -33,19 +33,19 @@ const projectData = [
     image: "/image/projects/3.png",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
-    previewUrl: "/",
+    previewUrl: "/https://inventario-eosin.vercel.app/",
   },
-/*   {
+   {
     id: 4,
-    title: "Proyecto 4",
+    title: "Amedias",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
-    image: "/image/projects/4.jpeg",
-    tag: ["Todo", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+      "App para  dividir gastos entre amigos de manera equitativa",
+    image: "/image/projects/4.png",
+    tag: ["Todo", "Mobile"],
+    gitUrl: "/https://github.com/SebastianGarciaGuerrero/Amedias",
+    previewUrl: "/https://amedias.vercel.app/",
   },
-  {
+/*  {
     id: 5,
     title: "Proyecto 5",
     description:
