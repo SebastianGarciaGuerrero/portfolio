@@ -13,39 +13,40 @@ const projectData = [
     image: "/image/projects/1.jpg",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/proyectofinal",
-    previewUrl: "https://vercel.com/sebastiangarciaguerreros-projects/ecommerce-frontend",
+    previewUrl:
+      "https://vercel.com/sebastiangarciaguerreros-projects/ecommerce-frontend",
   },
   {
     id: 2,
-    title: "DiviCuenta",
+    title: "DiviCuentas",
     description:
-      "Proyecto propio. Aplicación para dividir cuentas entre roomies, parejas o familias para un pago equitativo según sus ingresos. En proceso aún. Se está utilizando TailwindCSS, Nodejs, React.",
+      "App para dividir gastos domésticos de forma inteligente, calculando aportes equitativos según los ingresos de cada usuario (roomies, parejas o familias). Desarrollada con React + Node.js y estilizada con TailwindCSS para un diseño responsive. Proyecto personal en activo desarrollo.",
     image: "/image/projects/2.png",
     tag: ["Todo", "Mobile"],
-    gitUrl: "https://github.com/SebastianGarciaGuerrero/DiviCuenta",
-    previewUrl: "https://divi-cuenta.vercel.app/",
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/DiviCuentas",
+    previewUrl: "https://divicuentas.vercel.app/",
   },
   {
     id: 3,
     title: "Gestión de Inventario",
     description:
-      "Proyecto inspirado de EdRoh en Youtube. Puntapié inicial para aprender sobre TypeScript y AWS (ECS2, RDS Y S3). En proceso aún.",
+      "App de inventario desarrollada con TypeScript y AWS (EC2, RDS, S3) para gestionar stock, generar alertas y reportes. Proyecto inspirado en EdRoh que me permitió aprender estas tecnologías. (En desarrollo activo)",
     image: "/image/projects/3.png",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
     previewUrl: "https://inventario-eosin.vercel.app/",
   },
-   {
+  {
     id: 4,
     title: "Amedias",
     description:
-      "App para  dividir gastos entre amigos de manera equitativa",
+      "App para dividir gastos en pareja (o entre amigos) como una conversación. Cada gasto se registra directamente en un chat compartido: solo escribe el monto y la descripción, y la app calcula en tiempo real cuánto debe cada uno.",
     image: "/image/projects/4.png",
     tag: ["Todo", "Mobile"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/Amedias",
     previewUrl: "https://amedias.vercel.app/",
   },
-/*  {
+  /*  {
     id: 5,
     title: "Proyecto 5",
     description:
