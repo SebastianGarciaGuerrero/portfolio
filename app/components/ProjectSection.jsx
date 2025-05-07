@@ -33,7 +33,7 @@ const projectData = [
     image: "/image/projects/3.png",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
-    previewUrl: "/https://inventario-eosin.vercel.app/",
+    previewUrl: "https://inventario-eosin.vercel.app/",
   },
    {
     id: 4,
@@ -42,8 +42,8 @@ const projectData = [
       "App para  dividir gastos entre amigos de manera equitativa",
     image: "/image/projects/4.png",
     tag: ["Todo", "Mobile"],
-    gitUrl: "/https://github.com/SebastianGarciaGuerrero/Amedias",
-    previewUrl: "/https://amedias.vercel.app/",
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/Amedias",
+    previewUrl: "https://amedias.vercel.app/",
   },
 /*  {
     id: 5,
