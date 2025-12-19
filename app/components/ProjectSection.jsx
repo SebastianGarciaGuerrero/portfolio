@@ -2,76 +2,59 @@
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
-import { animate, motion, useInView } from "framer-motion";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 
 const projectData = [
   {
     id: 1,
-    title: "E-commerce",
+    title: "E-commerce Fullstack",
     description:
-      "Proyecto final de Desafio Latam. PERN stack, con autenticación de usuario, carrito de compras, bycrypt, JWT, JScookie TailwindCSS y Gravatar.",
+      "Plataforma robusta con stack PERN. Incluye pasarela de pagos simulada, gestión de carrito y seguridad con JWT y Bcrypt.",
     image: "/image/projects/1.jpg",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/proyectofinal",
-    previewUrl:
-      "https://vercel.com/sebastiangarciaguerreros-projects/ecommerce-frontend",
+    previewUrl: "https://ecommerce-frontend-sebastiangarcia.vercel.app/",
+    techs: ["React", "PostgreSQL", "Node.js", "Tailwind"],
   },
   {
     id: 2,
     title: "DiviCuentas",
     description:
-      "App para dividir gastos domésticos de forma inteligente, calculando aportes equitativos según los ingresos de cada usuario (roomies, parejas o familias). Desarrollada con React + Node.js y estilizada con TailwindCSS para un diseño responsive. Proyecto personal en activo desarrollo.",
+      "Calculadora inteligente de gastos compartidos proporcionales al ingreso. Ideal para roomies y parejas que buscan equidad financiera.",
     image: "/image/projects/2.png",
-    tag: ["Todo", "Mobile"],
+    tag: ["Todo", "Web", "Mobile"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/DiviCuentas",
     previewUrl: "https://divicuentas.vercel.app/",
+    techs: ["Next.js", "TypeScript", "Tailwind"],
   },
   {
     id: 3,
-    title: "Gestión de Inventario",
+    title: "Stock Master (AWS)",
     description:
-      "App de inventario desarrollada con TypeScript y AWS (EC2, RDS, S3) para gestionar stock, generar alertas y reportes. Proyecto inspirado en EdRoh que me permitió aprender estas tecnologías. (En desarrollo activo)",
+      "Sistema de gestión de inventario empresarial desplegado en AWS (EC2/S3). Control de stock en tiempo real y analíticas avanzadas.",
     image: "/image/projects/3.png",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
     previewUrl: "https://inventario-eosin.vercel.app/",
+    techs: ["TypeScript", "AWS", "Redux"],
   },
   {
     id: 4,
-    title: "Amedias",
+    title: "Amedias Chat-App",
     description:
-      "App para dividir gastos en pareja (o entre amigos) como una conversación. Cada gasto se registra directamente en un chat compartido: solo escribe el monto y la descripción, y la app calcula en tiempo real cuánto debe cada uno.",
+      "Gestión de gastos grupales con interfaz tipo chat. Registra deudas conversando, con cálculos automáticos en tiempo real.",
     image: "/image/projects/4.png",
     tag: ["Todo", "Mobile"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/Amedias",
     previewUrl: "https://amedias.vercel.app/",
+    techs: ["React", "Firebase", "Framer Motion"],
   },
-  /*  {
-    id: 5,
-    title: "Proyecto 5",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
-    image: "/image/projects/5.jpeg",
-    tag: ["Todo", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Proyecto 6",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aspernatur.",
-    image: "/image/projects/6.jpeg",
-    tag: ["Todo", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  }, */
 ];
 
 const ProjectSection = () => {
   const [tag, setTag] = useState("Todo");
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -81,53 +64,84 @@ const ProjectSection = () => {
     project.tag.includes(tag)
   );
 
-  const cardVariance = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
-
   return (
-    <section ref={ref} id="proyectos">
-      <h2 className="text-center mb-4 text-4xl font-bold text-white mt-4">
-        Mis Proyectos
-      </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Todo"
-          isSelected={tag === "Todo"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
+    <section
+      ref={ref}
+      id="proyectos"
+      className="py-20 px-4 md:px-8 bg-[#050505]"
+    >
+      <div className="max-w-6xl mx-auto">
+        {/* ENCABEZADO */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div className="text-left">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tighter">
+              Proyectos <span className="text-primary italic">Destacados</span>
+            </h2>
+            <p className="text-gray-500 max-w-md">
+              Una selección de mis trabajos más recientes, enfocados en
+              performance y experiencia de usuario.
+            </p>
+          </div>
+
+          {/* FILTROS */}
+          <div className="flex flex-wrap gap-3 bg-white/5 p-2 rounded-2xl border border-white/10 h-fit">
+            {["Todo", "Web", "Mobile"].map((t) => (
+              <ProjectTag
+                key={t}
+                onClick={handleTagChange}
+                name={t}
+                isSelected={tag === t}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* GRID DE PROYECTOS */}
+        <motion.ul
+          layout
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <AnimatePresence mode="popLayout">
+            {filteredProjects.map((project, index) => (
+              <motion.li
+                key={project.id}
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
+                transition={{
+                  duration: 0.4,
+                  delay: isInView ? index * 0.1 : 0,
+                  ease: "easeOut",
+                }}
+              >
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  imgUrl={project.image}
+                  gitUrl={project.gitUrl}
+                  previewUrl={project.previewUrl}
+                  tags={project.techs} // Pasamos los techs como tags a la card que hicimos antes
+                />
+              </motion.li>
+            ))}
+          </AnimatePresence>
+        </motion.ul>
+
+        {/* FOOTER DE SECCIÓN (Opcional) */}
+        <div className="mt-20 text-center">
+          <p className="text-gray-600 text-sm">
+            ¿Quieres ver más? Explora mi{" "}
+            <a
+              href="https://github.com/SebastianGarciaGuerrero"
+              target="_blank"
+              className="text-primary hover:underline"
+            >
+              GitHub completo
+            </a>
+          </p>
+        </div>
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariance}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
     </section>
   );
 };

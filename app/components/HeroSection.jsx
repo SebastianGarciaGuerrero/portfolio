@@ -3,54 +3,62 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { FiDownload, FiSend } from "react-icons/fi";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="py-20">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-        className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12"
-      >
+    <section
+      id="hero"
+      className="min-h-screen flex items-center py-16 lg:py-24"
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full max-w-7xl mx-auto px-4">
+        {/* TEXTO IZQUIERDA */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="lg:col-span-7 place-self-center text-center lg:text-left"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="lg:col-span-8 place-self-center text-center lg:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              ¡Hola! Mi nombre es {""}
+          <h1 className="text-white mb-6 text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">
+              ¡Hola! Soy
             </span>
             <br />
-            <TypeAnimation
-              sequence={[
-                "Sebastián García",
-                1000,
-                "Pelao",
-                1000,
-                "Seba",
-                1000,
-                "Tato",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            <div className="h-20 sm:h-28 lg:h-32">
+              {" "}
+              {/* Altura fija para evitar saltos de layout */}
+              <TypeAnimation
+                sequence={[
+                  "Sebastián García",
+                  1500,
+                  "Desarrollador Full Stack",
+                  1200,
+                  "Especialista en React",
+                  1200,
+                  "Tato Dev",
+                  1200,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="text-white"
+              />
+            </div>
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Desarrollador web Full Stack en constante aprendizaje, siempre en
-            busca de nuevos desafíos y tecnologías innovadoras. Actualmente, me
-            especializo de forma autodidacta en el stack PERN, mientras practico
-            en mis estudios universitarios Python y PHP. Además, dedico tiempo a
-            explorar AWS en mis ratos libres para ampliar mis conocimientos en
-            la nube.
+
+          <p className="text-gray-400 text-base sm:text-lg mb-8 lg:text-xl max-w-2xl leading-relaxed">
+            Construyo experiencias digitales escalables con el{" "}
+            <span className="text-green-400 font-mono">stack PERN</span>.
+            Actualmente explorando la potencia de{" "}
+            <span className="text-green-400 font-mono">AWS</span> y la
+            versatilidad de{" "}
+            <span className="text-green-400 font-mono">Python</span> para crear
+            soluciones de software modernas.
           </p>
-          <div>
+
+          <div className="flex flex-col sm:flex-row gap-4 items-center lg:justify-start justify-center">
             <button
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              className="group px-8 py-4 w-full sm:w-fit rounded-full bg-primary-dark hover:bg-green-700 text-white font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary-dark/20"
               onClick={() => {
                 document
                   .getElementById("contacto")
@@ -58,32 +66,46 @@ const HeroSection = () => {
               }}
             >
               ¡Escríbeme!
+              <FiSend className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
+
             <a
-              href="https://drive.google.com/file/d/1sucEjO-BmTEFDHjsQZVvO7LV2irAgE3s/view?usp=sharing"
+              href="https://drive.google.com/file/d/1sveWM58CTnue46a2EsizTq8ra0rpOr5S/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              className="w-full sm:w-fit"
             >
-              <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-600 hover:bg-slate-800 text-white mt-3">
-                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                  Mira mi CV
-                </span>
+              <button className="group px-8 py-4 w-full rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-white font-bold transition-all flex items-center justify-center gap-2">
+                Descargar CV
+                <FiDownload className="group-hover:translate-y-1 transition-transform" />
               </button>
             </a>
           </div>
         </motion.div>
-        <div className="lg:col-span-5 place-self-center mt-8 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] relative">
+
+        {/* IMAGEN DERECHA */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, x: 50 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="lg:col-span-4 place-self-center relative"
+        >
+          {/* Círculo de fondo con resplandor */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 bg-primary-dark/20 rounded-full blur-[80px]" />
+
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px]">
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary-dark/20 to-transparent rounded-full border border-white/5" />
             <Image
               src="/image/seba3d.png"
-              alt="hero-image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={500}
-              height={500}
+              alt="Sebastián García 3D"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+              width={450}
+              height={450}
+              priority
             />
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 };
