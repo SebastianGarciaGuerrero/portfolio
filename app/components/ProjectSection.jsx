@@ -68,7 +68,7 @@ const ProjectSection = () => {
     <section
       ref={ref}
       id="proyectos"
-      className="py-20 px-4 md:px-8 bg-[#050505]"
+      className="py-20 px-4 md:px-8"
     >
       <div className="max-w-6xl mx-auto">
         {/* ENCABEZADO */}

@@ -26,22 +26,21 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
-        scrolled 
-          ? "bg-[#0a0a0a]/80 backdrop-blur-md border-white/10 py-3" 
+        scrolled
+          ? "bg-[#0a0a0a]/80 backdrop-blur-md border-white/10 py-3"
           : "bg-transparent border-transparent py-5"
       }`}
     >
       <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-6">
-        
         {/* LOGO */}
         <Link
           href="#hero"
           className="text-xl md:text-2xl text-white font-bold tracking-tighter hover:text-primary transition-colors"
         >
           <span className="text-primary">{"<"}</span>
-          SEBASTIAN
+          SEBASTIÁN
           <span className="text-primary font-mono">.dev {"/>"}</span>
         </Link>
 
@@ -64,9 +63,9 @@ const Navbar = () => {
           <ul className="flex items-center gap-4 lg:gap-8">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink 
-                  href={link.href} 
-                  title={link.title} 
+                <NavLink
+                  href={link.href}
+                  title={link.title}
                   className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
                 />
               </li>

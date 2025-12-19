@@ -74,7 +74,7 @@ const Footer = () => {
             © {currentYear} Sebastián García — Valparaíso, Chile
           </p>
           <div className="flex gap-6 text-[12px] text-gray-600 uppercase tracking-widest font-medium">
-             <span>Design by Me</span>
+             <span>Diseñado por mi</span>
              <span className="text-gray-800">/</span>
              <span>Code with Conviction</span>
           </div>

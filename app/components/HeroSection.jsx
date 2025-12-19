@@ -96,7 +96,7 @@ const HeroSection = () => {
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px]">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary-dark/20 to-transparent rounded-full border border-white/5" />
             <Image
-              src="/image/seba3d.png"
+              src="/image/zeva.png"
               alt="Sebastián García 3D"
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
               width={450}

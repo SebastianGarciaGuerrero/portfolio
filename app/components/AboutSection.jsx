@@ -100,7 +100,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-[#050505]" id="sobremi">
+    <section className="py-20 px-6" id="sobremi">
       <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 gap-12 items-center">
         {/* LADO IZQUIERDO: IMAGEN CON EFECTO */}
         <div className="relative group flex justify-center md:justify-start">
@@ -124,15 +124,19 @@ const AboutSection = () => {
               <span className="h-1 w-12 bg-primary-dark inline-block rounded-full"></span>
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Mi viaje en la programación nació de la curiosidad autodidacta en
-              YouTube, lo que me llevó a profesionalizar mi pasión en la
-              universidad. Como{" "}
-              <strong className="text-white font-medium">
+              Mi viaje en la programación nació de la curiosidad autodidacta, lo
+              que me llevó a profesionalizar mi pasión en la universidad. Como{" "}
+              <strong className="text-primary font-medium">
                 desarrollador y deportista
               </strong>
               , combino la disciplina del entrenamiento con la lógica del
-              código. Valoro la responsabilidad y el trabajo en equipo, pilares
-              que guían cada línea que escribo.
+              código. Hoy, potencio este flujo de trabajo integrando{" "}
+              <strong className="text-primary font-medium">
+                Inteligencia Artificial
+              </strong>{" "}
+              para maximizar mi productividad y calidad, permitiéndome crear
+              soluciones eficientes mientras mantengo la responsabilidad y el
+              trabajo en equipo como mis pilares.
             </p>
           </div>
 
