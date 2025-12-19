@@ -64,11 +64,15 @@ const TAB_DATA = [
         {[
           {
             name: "IT Essentials de Cisco",
-            link: "https://drive.google.com/file/d/1l4pxuUsQ4o4cdalmFP5FLLCBiWjEk204/view?usp=sharing",
+            link: "https://drive.google.com/file/d/108MtsTVMzh8HgeoarH-U8r11MxQMQ24k/view?usp=sharing",
           },
           {
             name: "FullStack Desafío Latam",
-            link: "https://drive.google.com/file/d/1o9pRlxmcgXKdZBQHLn56sV4s6RzJT0tz/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1kVJrJo4aNb1tlwjmsFv1n2gFM-cT07MD/view?usp=sharing",
+          },
+          {
+            name: "C2 Proficient",
+            link: "https://drive.google.com/file/d/1avXtoSKY5gRUL-FWaXVfezFuhxPeeMc2/view?usp=sharing",
           },
         ].map((cert) => (
           <li key={cert.name}>

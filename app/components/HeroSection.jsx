@@ -31,11 +31,11 @@ const HeroSection = () => {
                 sequence={[
                   "Sebastián García",
                   1500,
-                  "Desarrollador Full Stack",
+                  "Desarrollador Frontend",
                   1200,
                   "Especialista en React",
                   1200,
-                  "Tato Dev",
+                  "Analista de Datos",
                   1200,
                 ]}
                 wrapper="span"
@@ -47,13 +47,15 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-gray-400 text-base sm:text-lg mb-8 lg:text-xl max-w-2xl leading-relaxed">
-            Construyo experiencias digitales escalables con el{" "}
-            <span className="text-green-400 font-mono">stack PERN</span>.
-            Actualmente explorando la potencia de{" "}
-            <span className="text-green-400 font-mono">AWS</span> y la
-            versatilidad de{" "}
-            <span className="text-green-400 font-mono">Python</span> para crear
-            soluciones de software modernas.
+            Especializado en crear interfaces dinámicas con{" "}
+            <span className="text-green-400 font-mono">React</span> y gestionar
+            datos con <span className="text-green-400 font-mono">SQL</span>.
+            Aunque mi foco es el Frontend, integro lógica de Backend y
+            actualmente exploro el potencial de la{" "}
+            <span className="text-green-400 font-mono">
+              Inteligencia Artificial
+            </span>{" "}
+            para construir la próxima generación de software.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center lg:justify-start justify-center">
