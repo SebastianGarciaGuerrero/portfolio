@@ -10,10 +10,10 @@ const projectData = [
     title: "E-commerce Fullstack",
     description:
       "Plataforma robusta con stack PERN. Incluye pasarela de pagos simulada, gestión de carrito y seguridad con JWT y Bcrypt.",
-    image: "/image/projects/1.jpg",
+    image: "/image/projects/1.png",
     tag: ["Todo", "Web"],
-    gitUrl: "https://github.com/SebastianGarciaGuerrero/proyectofinal",
-    previewUrl: "https://ecommerce-frontend-sebastiangarcia.vercel.app/",
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/apartsushi",
+    previewUrl: "https://apartsushi.vercel.app/",
     techs: ["React", "PostgreSQL", "Node.js", "Tailwind"],
   },
   {
@@ -25,29 +25,29 @@ const projectData = [
     tag: ["Todo", "Web", "Mobile"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/DiviCuentas",
     previewUrl: "https://divicuentas.vercel.app/",
-    techs: ["Next.js", "TypeScript", "Tailwind"],
+    techs: ["React", "JavaScript", "Tailwind"],
   },
-  {
-    id: 3,
-    title: "Stock Master (AWS)",
-    description:
-      "Sistema de gestión de inventario empresarial desplegado en AWS (EC2/S3). Control de stock en tiempo real y analíticas avanzadas.",
-    image: "/image/projects/3.png",
-    tag: ["Todo", "Web"],
-    gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
-    previewUrl: "https://inventario-eosin.vercel.app/",
-    techs: ["TypeScript", "AWS", "Redux"],
-  },
+  // {
+  //   id: 3,
+  //   title: "Frontend Prototype",
+  //   description:
+  //     "Dashboard de Inventario - UI Prototype Desarrollo de una interfaz de alta fidelidad para sistemas de gestión de recursos (ERP). El objetivo principal fue trasladar un diseño complejo a código limpio y mantenible, priorizando la usabilidad y la jerarquía visual. La aplicación simula operaciones CRUD (Crear, Leer, Actualizar, Borrar) mediante manejo de estado en el cliente, ofreciendo una experiencia de navegación fluida e instantánea.",
+  //   image: "/image/projects/3.png",
+  //   tag: ["Todo", "Web"],
+  //   gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
+  //   previewUrl: "https://inventario-eosin.vercel.app/",
+  //   techs: ["TypeScript", "Tailwind", "Redux"],
+  // },
   {
     id: 4,
     title: "Amedias Chat-App",
     description:
-      "Gestión de gastos grupales con interfaz tipo chat. Registra deudas conversando, con cálculos automáticos en tiempo real.",
+      "Gestión de gastos de parejas con interfaz tipo chat. Registra deudas conversando, con cálculos automáticos en tiempo real.",
     image: "/image/projects/4.png",
     tag: ["Todo", "Mobile"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/Amedias",
     previewUrl: "https://amedias.vercel.app/",
-    techs: ["React", "Firebase", "Framer Motion"],
+    techs: ["React", "MongoDB", "Node"],
   },
 ];
 
