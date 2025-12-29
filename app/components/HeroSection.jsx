@@ -72,7 +72,7 @@ const HeroSection = () => {
             </button>
 
             <a
-              href="https://drive.google.com/file/d/1sveWM58CTnue46a2EsizTq8ra0rpOr5S/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lSzEhKtGNhUTzHZuWRHfHmIP_-8lVwgs/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-fit"
