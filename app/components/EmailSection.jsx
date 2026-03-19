@@ -75,12 +75,18 @@ const EmailSection = () => {
             </span>
           </h2>
           <p className="text-gray-400 text-lg mb-8 leading-relaxed max-w-md">
-            Estoy disponible para nuevos proyectos. Si tienes una idea creativa
-            en mente o necesitas un{" "}
-            <span className="text-white font-medium">
-              sitio web moderno para impulsar tu emprendimiento
+            Busco proyectos de vanguardia— desde arquitectura hasta el detalle final.
+            Me motiva colaborar en{" "}
+            <span className="text-green-400">
+              proyectos que resuelvan problemas reales
             </span>
-            , trabajemos juntos para hacerlo realidad.
+            , construir interfaces que no solo se vean bien sino que funcionen con
+            lógica sólida detrás. Si estás armando algo interesante y necesitas a
+            alguien con ganas de{" "}
+            <span className="text-green-400">
+              programar, aprender rápido y empujar el trabajo al siguiente nivel
+            </span>
+            , hablemos.
           </p>
 
           <div className="space-y-6 mb-10">
@@ -88,7 +94,7 @@ const EmailSection = () => {
               <div className="p-3 bg-white/5 rounded-lg border border-white/10 group-hover:border-primary/50">
                 <FiMail className="text-primary" />
               </div>
-              <span>hola@sebastiangarcia.cl</span>
+              <span>seba.garcia.g@gmail.com</span>
             </div>
             <div className="flex items-center gap-4 group text-gray-400 hover:text-white transition-colors">
               <div className="p-3 bg-white/5 rounded-lg border border-white/10 group-hover:border-primary/50">
@@ -132,9 +138,8 @@ const EmailSection = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className={`w-full bg-white/5 border ${
-                  errors.name ? "border-red-500" : "border-white/10"
-                } focus:border-primary rounded-xl px-4 py-3 text-white outline-none transition-all placeholder:text-gray-600`}
+                className={`w-full bg-white/5 border ${errors.name ? "border-red-500" : "border-white/10"
+                  } focus:border-primary rounded-xl px-4 py-3 text-white outline-none transition-all placeholder:text-gray-600`}
                 placeholder="Tu nombre"
               />
               {errors.name && (
@@ -155,9 +160,8 @@ const EmailSection = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full bg-white/5 border ${
-                  errors.email ? "border-red-500" : "border-white/10"
-                } focus:border-primary rounded-xl px-4 py-3 text-white outline-none transition-all placeholder:text-gray-600`}
+                className={`w-full bg-white/5 border ${errors.email ? "border-red-500" : "border-white/10"
+                  } focus:border-primary rounded-xl px-4 py-3 text-white outline-none transition-all placeholder:text-gray-600`}
                 placeholder="email@ejemplo.com"
               />
               {errors.email && (
@@ -178,9 +182,8 @@ const EmailSection = () => {
                 rows="4"
                 value={formData.message}
                 onChange={handleChange}
-                className={`w-full bg-white/5 border ${
-                  errors.message ? "border-red-500" : "border-white/10"
-                } focus:border-primary rounded-xl px-4 py-3 text-white outline-none transition-all placeholder:text-gray-600 resize-none`}
+                className={`w-full bg-white/5 border ${errors.message ? "border-red-500" : "border-white/10"
+                  } focus:border-primary rounded-xl px-4 py-3 text-white outline-none transition-all placeholder:text-gray-600 resize-none`}
                 placeholder="¿En qué puedo ayudarte?"
               ></textarea>
               {errors.message && (

@@ -7,14 +7,14 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 const projectData = [
   {
     id: 1,
-    title: "E-commerce Fullstack",
+    title: "Sitio Oficial de CD Las Galaxias",
     description:
-      "Plataforma robusta con stack PERN. Incluye pasarela de pagos simulada, gestión de carrito y seguridad con JWT y Bcrypt.",
+      "Modernización digital de un club deportivo mediante una SPA (Single Page Application). Combina una interfaz intuitiva y responsiva para los hinchas, con un backoffice automatizado que permite a la directiva gestionar fixtures, goleadores y un blog de noticias sin tocar código.",
     image: "/image/projects/1.png",
     tag: ["Todo", "Web"],
-    gitUrl: "https://github.com/SebastianGarciaGuerrero/apartsushi",
-    previewUrl: "https://apartsushi.vercel.app/",
-    techs: ["React", "PostgreSQL", "Node.js", "Tailwind"],
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/las-galaxias",
+    previewUrl: "https://www.lasgalaxias.cl/",
+    techs: ["React", "Supabase", "Node.js", "Tailwind"],
   },
   {
     id: 2,
@@ -27,17 +27,17 @@ const projectData = [
     previewUrl: "https://divicuentas.vercel.app/",
     techs: ["React", "JavaScript", "Tailwind"],
   },
-  // {
-  //   id: 3,
-  //   title: "Frontend Prototype",
-  //   description:
-  //     "Dashboard de Inventario - UI Prototype Desarrollo de una interfaz de alta fidelidad para sistemas de gestión de recursos (ERP). El objetivo principal fue trasladar un diseño complejo a código limpio y mantenible, priorizando la usabilidad y la jerarquía visual. La aplicación simula operaciones CRUD (Crear, Leer, Actualizar, Borrar) mediante manejo de estado en el cliente, ofreciendo una experiencia de navegación fluida e instantánea.",
-  //   image: "/image/projects/3.png",
-  //   tag: ["Todo", "Web"],
-  //   gitUrl: "https://github.com/SebastianGarciaGuerrero/inventario",
-  //   previewUrl: "https://inventario-eosin.vercel.app/",
-  //   techs: ["TypeScript", "Tailwind", "Redux"],
-  // },
+  {
+    id: 3,
+    title: "Cobra 3-6-9",
+    description:
+      "Aplicación web de gestión de cobranza legal desarrollada con React + Vite, que automatiza el cálculo de honorarios extrajudiciales bajo la tabla 3-6-9, acuerdos de pago en cuotas con interés simple y desglose de abonos, reemplazando flujos manuales en Excel con una interfaz moderna, resultados copiables y exportación de tablas formateadas para Word.",
+    image: "/image/projects/3.png",
+    tag: ["Todo", "Web"],
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/cobra369",
+    previewUrl: "https://cobra369-sooty.vercel.app/",
+    techs: ["TypeScript", "Tailwind", "Redux"],
+  },
   {
     id: 4,
     title: "Amedias Chat-App",

@@ -15,7 +15,7 @@ const Footer = () => {
               <span>garcia<span className="text-primary">.</span>dev</span>
             </div>
             <p className="text-sm leading-relaxed text-gray-500">
-              Desarrollador Frontend enfocado en interfaces minimalistas, 
+              Desarrollador Frontend enfocado en interfaces minimalistas,
               animaciones fluidas y código limpio.
             </p>
           </div>
@@ -28,7 +28,7 @@ const Footer = () => {
               <li><a href="#sobre-mi" className="hover:text-white transition-colors tracking-wide">Mi Trayectoria</a></li>
               <li><a href="#contacto" className="hover:text-white transition-colors tracking-wide">Contacto</a></li>
               <li>
-                <a href="/cv.pdf" className="flex items-center gap-2 hover:text-white transition-colors tracking-wide">
+                <a href="https://drive.google.com/file/d/1lSzEhKtGNhUTzHZuWRHfHmIP_-8lVwgs/view" className="flex items-center gap-2 hover:text-white transition-colors tracking-wide">
                   Descargar CV <ExternalLink size={14} />
                 </a>
               </li>
@@ -59,11 +59,11 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex items-center gap-3 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-lg w-fit">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                <span className="text-[10px] text-green-500 font-bold tracking-[0.1em] uppercase">Disponible</span>
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <span className="text-[10px] text-green-500 font-bold tracking-[0.1em] uppercase">Disponible</span>
             </div>
           </div>
         </div>
@@ -74,9 +74,9 @@ const Footer = () => {
             © {currentYear} Sebastián García — Valparaíso, Chile
           </p>
           <div className="flex gap-6 text-[12px] text-gray-600 uppercase tracking-widest font-medium">
-             <span>Diseñado por mi</span>
-             <span className="text-gray-800">/</span>
-             <span>Code with Conviction</span>
+            <span>Diseñado por mi</span>
+            <span className="text-gray-800">/</span>
+            <span>Code with Conviction</span>
           </div>
         </div>
       </div>

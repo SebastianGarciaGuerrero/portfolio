@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiMiniCodeBracket } from "react-icons/hi2";
 import { FaEye } from "react-icons/fa";
 import Link from "next/link";
@@ -11,17 +11,16 @@ const ProjectCard = ({
   previewUrl,
   tags = ["React", "Tailwind"],
 }) => {
+  const [expanded, setExpanded] = useState(false)
+
   return (
     <div className="group bg-[#0f0f0f] rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-500 shadow-2xl">
       {/* CONTENEDOR DE IMAGEN */}
       <div className="relative h-52 md:h-64 overflow-hidden">
-        {/* Imagen con efecto Zoom */}
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
           style={{ backgroundImage: `url(${imgUrl})` }}
         />
-
-        {/* Overlay con Blur y botones */}
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center gap-4">
           <Link
             href={gitUrl}
@@ -59,9 +58,18 @@ const ProjectCard = ({
           {title}
         </h3>
 
-        <p className="text-gray-400 text-sm leading-relaxed line-clamp-2">
-          {description}
-        </p>
+        {/* Descripción con toggle */}
+        <div className="relative">
+          <p className={`text-gray-400 text-sm leading-relaxed transition-all duration-300 ${expanded ? '' : 'line-clamp-2'}`}>
+            {description}
+          </p>
+          <button
+            onClick={() => setExpanded(p => !p)}
+            className="mt-1 text-xs font-bold text-green-400 hover:text-green-300 transition-colors"
+          >
+            {expanded ? 'Ver menos ↑' : 'Ver más ↓'}
+          </button>
+        </div>
 
         <div className="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
           <Link
