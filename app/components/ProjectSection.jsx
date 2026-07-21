@@ -15,6 +15,7 @@ const projectData = [
     gitUrl: "https://github.com/SebastianGarciaGuerrero/las-galaxias",
     previewUrl: "https://www.lasgalaxias.cl/",
     techs: ["React", "Supabase", "Node.js", "Tailwind"],
+    collaborative: true,
   },
   {
     id: 2,
@@ -48,6 +49,17 @@ const projectData = [
     gitUrl: "https://github.com/SebastianGarciaGuerrero/Amedias",
     previewUrl: "https://amedias.vercel.app/",
     techs: ["React", "MongoDB", "Node"],
+  },
+  {
+    id: 5,
+    title: "Hadad 2.0 — Sistema de Cobranza",
+    description:
+      "Plataforma web de gestión de cobranza extrajudicial y judicial para el estudio jurídico González & Hadad, que reemplaza las planillas Excel de gestión, recupero mensual y rendición a clínicas. Incluye administración de clientes, deudores y cobranzas, gestiones inmutables para preservar el historial legal, acuerdos de pago en cuotas y carga masiva de gestiones. Frontend en React + TypeScript sobre una API FastAPI con PostgreSQL, todo containerizado con Docker.",
+    image: "/image/projects/hadad.png",
+    tag: ["Todo", "Web"],
+    gitUrl: "https://github.com/SebastianGarciaGuerrero/hadad-v2",
+    previewUrl: null,
+    techs: ["React", "TypeScript", "FastAPI", "PostgreSQL"],
   },
 ];
 
@@ -122,6 +134,7 @@ const ProjectSection = () => {
                   gitUrl={project.gitUrl}
                   previewUrl={project.previewUrl}
                   tags={project.techs} // Pasamos los techs como tags a la card que hicimos antes
+                  collaborative={project.collaborative}
                 />
               </motion.li>
             ))}
@@ -135,6 +148,7 @@ const ProjectSection = () => {
             <a
               href="https://github.com/SebastianGarciaGuerrero"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-primary hover:underline"
             >
               GitHub completo

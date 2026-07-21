@@ -12,11 +12,13 @@ const TAB_DATA = [
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         {[
           "JavaScript",
-          "Node.js",
+          "TypeScript",
           "React",
           "Next.js",
+          "Node.js",
           "PostgreSQL",
           "TailwindCSS",
+          "Git",
         ].map((skill) => (
           <div
             key={skill}
@@ -79,6 +81,7 @@ const TAB_DATA = [
             <a
               href={cert.link}
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-all group"
             >
               <span className="text-gray-300 group-hover:text-white transition-colors">

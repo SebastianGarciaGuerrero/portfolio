@@ -25,10 +25,10 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-6 text-sm uppercase tracking-[0.2em]">Navegación</h3>
             <ul className="space-y-4 text-sm">
               <li><a href="#proyectos" className="hover:text-white transition-colors tracking-wide">Proyectos Seleccionados</a></li>
-              <li><a href="#sobre-mi" className="hover:text-white transition-colors tracking-wide">Mi Trayectoria</a></li>
+              <li><a href="#sobremi" className="hover:text-white transition-colors tracking-wide">Mi Trayectoria</a></li>
               <li><a href="#contacto" className="hover:text-white transition-colors tracking-wide">Contacto</a></li>
               <li>
-                <a href="https://drive.google.com/file/d/1lSzEhKtGNhUTzHZuWRHfHmIP_-8lVwgs/view" className="flex items-center gap-2 hover:text-white transition-colors tracking-wide">
+                <a href="https://drive.google.com/file/d/1lSzEhKtGNhUTzHZuWRHfHmIP_-8lVwgs/view" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors tracking-wide">
                   Descargar CV <ExternalLink size={14} />
                 </a>
               </li>
@@ -51,10 +51,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-6 text-sm uppercase tracking-[0.2em]">Social</h3>
             <div className="flex gap-4 mb-6">
-              <a href="https://github.com/SebastianGarciaGuerrero" className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-primary hover:text-white transition-all">
+              <a href="https://github.com/SebastianGarciaGuerrero" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-primary hover:text-white transition-all">
                 <Github size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/sebastiangarciaguerrero/" className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-primary hover:text-white transition-all">
+              <a href="https://www.linkedin.com/in/sebastiangarciaguerrero/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-primary hover:text-white transition-all">
                 <Linkedin size={20} />
               </a>
             </div>

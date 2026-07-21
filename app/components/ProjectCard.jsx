@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiMiniCodeBracket } from "react-icons/hi2";
 import { FaEye } from "react-icons/fa";
+import { FiUsers } from "react-icons/fi";
 import Link from "next/link";
 
 const ProjectCard = ({
@@ -10,8 +11,10 @@ const ProjectCard = ({
   gitUrl,
   previewUrl,
   tags = ["React", "Tailwind"],
+  collaborative = false,
 }) => {
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false);
+  const hasDemo = Boolean(previewUrl);
 
   return (
     <div className="group bg-[#0f0f0f] rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-500 shadow-2xl">
@@ -21,23 +24,36 @@ const ProjectCard = ({
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
           style={{ backgroundImage: `url(${imgUrl})` }}
         />
+
+        {/* Badge de proyecto colaborativo */}
+        {collaborative && (
+          <span className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[10px] font-bold uppercase tracking-widest text-green-400">
+            <FiUsers size={12} />
+            Colaborativo
+          </span>
+        )}
+
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center gap-4">
           <Link
             href={gitUrl}
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center h-12 w-12 rounded-full bg-white/10 border border-white/20 text-white hover:bg-green-600 hover:border-primary transition-all duration-300"
             title="Ver Código"
           >
             <HiMiniCodeBracket size={24} />
           </Link>
-          <Link
-            href={previewUrl}
-            target="_blank"
-            className="flex items-center justify-center h-12 w-12 rounded-full bg-white/10 border border-white/20 text-white hover:bg-green-600 hover:border-primary transition-all duration-300"
-            title="Ver Demo"
-          >
-            <FaEye size={22} />
-          </Link>
+          {hasDemo && (
+            <Link
+              href={previewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-12 w-12 rounded-full bg-white/10 border border-white/20 text-white hover:bg-green-600 hover:border-primary transition-all duration-300"
+              title="Ver Demo"
+            >
+              <FaEye size={22} />
+            </Link>
+          )}
         </div>
       </div>
 
@@ -73,11 +89,12 @@ const ProjectCard = ({
 
         <div className="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
           <Link
-            href={previewUrl}
+            href={hasDemo ? previewUrl : gitUrl}
             target="_blank"
+            rel="noopener noreferrer"
             className="text-xs font-bold text-white uppercase tracking-tighter hover:underline flex items-center gap-1"
           >
-            Ver proyecto <span>→</span>
+            {hasDemo ? "Ver proyecto" : "Ver repositorio"} <span>→</span>
           </Link>
         </div>
       </div>

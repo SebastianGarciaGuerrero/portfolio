@@ -30,8 +30,52 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Grilla decorativa sutil para el fondo */
+  .bg-grid {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px
+      );
+    background-size: 56px 56px;
+  }
 }
 
 html {
   @apply scroll-smooth;
+}
+
+/* Respeta a quien prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Scrollbar acorde al tema oscuro */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 9999px;
+  border: 2px solid #0a0a0a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #16a34a;
+}
+
+/* Selección de texto con el verde de marca */
+::selection {
+  background: rgba(34, 197, 94, 0.3);
+  color: #fff;
 }
