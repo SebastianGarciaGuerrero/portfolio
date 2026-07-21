@@ -58,7 +58,7 @@ const projectData = [
     image: "/image/projects/hadad.png",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/hadad-v2",
-    previewUrl: null,
+    previewUrl: "https://hadad-v2-chi.vercel.app/",
     techs: ["React", "TypeScript", "FastAPI", "PostgreSQL"],
   },
 ];
