@@ -52,9 +52,9 @@ const projectData = [
   },
   {
     id: 5,
-    title: "Hadad 2.0 — Sistema de Cobranza",
+    title: "Sistema de Gestiones y Cobranza Judicial",
     description:
-      "Plataforma web de gestión de cobranza extrajudicial y judicial para el estudio jurídico González & Hadad, que reemplaza las planillas Excel de gestión, recupero mensual y rendición a clínicas. Incluye administración de clientes, deudores y cobranzas, gestiones inmutables para preservar el historial legal, acuerdos de pago en cuotas y carga masiva de gestiones. Frontend en React + TypeScript sobre una API FastAPI con PostgreSQL, todo containerizado con Docker.",
+      "Plataforma web propia para la gestión de cobranza extrajudicial y judicial, pensada como una solución integral y adaptable a cualquier empresa de cobranzas o estudio jurídico. Reemplaza las planillas de Excel con administración de clientes, deudores y cobranzas, gestiones inmutables que preservan el historial legal, acuerdos de pago en cuotas, abonos con desglose por concepto y carga masiva de gestiones. Construida con React + TypeScript sobre una API FastAPI con PostgreSQL, todo containerizado con Docker.",
     image: "/image/projects/hadad.png",
     tag: ["Todo", "Web"],
     gitUrl: "https://github.com/SebastianGarciaGuerrero/hadad-v2",
