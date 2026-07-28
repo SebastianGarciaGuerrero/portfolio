@@ -15,6 +15,7 @@ const ProjectCard = ({
 }) => {
   const [expanded, setExpanded] = useState(false);
   const hasDemo = Boolean(previewUrl);
+  const hasCode = Boolean(gitUrl);
 
   return (
     <div className="group bg-[#0f0f0f] rounded-2xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-500 shadow-2xl">
@@ -34,15 +35,17 @@ const ProjectCard = ({
         )}
 
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center gap-4">
-          <Link
-            href={gitUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center h-12 w-12 rounded-full bg-white/10 border border-white/20 text-white hover:bg-green-600 hover:border-primary transition-all duration-300"
-            title="Ver Código"
-          >
-            <HiMiniCodeBracket size={24} />
-          </Link>
+          {hasCode && (
+            <Link
+              href={gitUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-12 w-12 rounded-full bg-white/10 border border-white/20 text-white hover:bg-green-600 hover:border-primary transition-all duration-300"
+              title="Ver Código"
+            >
+              <HiMiniCodeBracket size={24} />
+            </Link>
+          )}
           {hasDemo && (
             <Link
               href={previewUrl}

@@ -61,6 +61,17 @@ const projectData = [
     previewUrl: "https://hadad-v2-chi.vercel.app/",
     techs: ["React", "TypeScript", "FastAPI", "PostgreSQL"],
   },
+  {
+    id: 6,
+    title: "Hadad & Asociados — Sitio Web",
+    description:
+      "Sitio web institucional para Hadad & Asociados, empresa de cobranza y asesoría legal de Valparaíso con más de 30 años de trayectoria. Presenta sus servicios (cobranza extrajudicial y judicial, asesoría legal y financiera, certificado de castigo, reorganización o liquidación forzosa), el equipo, la cartera de clientes y un acceso de pago en línea. Diseño limpio y responsivo pensado para transmitir confianza y facilitar el contacto.",
+    image: "/image/projects/hadadweb.png",
+    tag: ["Todo", "Web"],
+    gitUrl: null,
+    previewUrl: "https://hadadyasociados.cl/",
+    techs: ["React", "TypeScript", "Vite", "Tailwind"],
+  },
 ];
 
 const ProjectSection = () => {
